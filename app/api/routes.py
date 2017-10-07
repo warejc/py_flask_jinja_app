@@ -7,7 +7,7 @@ from services.team_service import TeamService
 from os import environ, path
 from time import mktime
 
-app = Flask(__name__)
+
 accepted_image_mimetypes = ['application/x-yaml', 'text/yaml']
 jinja = Environment(loader=FileSystemLoader(path.dirname(path.abspath(__file__))), trim_blocks=True)
 team_service = TeamService()

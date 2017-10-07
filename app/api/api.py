@@ -19,5 +19,5 @@ def get_teams():
 @api_blueprint.route('/<team_id>', methods=['GET'])
 def get_team(team_id):
     #get single team data
-    team = team_dbc.get_teams(team_id=team_id)
+    team = team_dbc.get_team(team_id=team_id)
     return jsonify({'team': team}), 200
